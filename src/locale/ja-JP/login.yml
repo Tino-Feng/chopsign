@@ -1,0 +1,32 @@
+login:
+  title: ログイン
+  form:
+    email:
+      label: メールアドレス
+      placeholder: ls@chopsign.com
+      rules:
+        required: メールアドレスを入力してください
+        format: 有効なメールアドレスを入力してください
+    password:
+      label: パスワード
+      placeholder: Cs@2025
+      forgot: パスワードをお忘れですか？
+      rules:
+        required: パスワードを入力してください
+        format: パスワードは8-16文字の半角英数字で入力してください
+    submit: ログイン
+  noAccount: アカウントをお持ちでない方は？ <0>{{link}}</0>
+  toRegister: アカウントを作成
+  tab:
+    account: アカウントログイン
+    qrcode: QRコードログイン
+  modal:
+    tooltip: 注意
+    content: ログインを続けることで、<0>{{userProtocol}}</0>と<1>{{privacyPolicy}}</1>に同意したものとみなされます
+    positiveText: 同意
+    negativeText: 同意しない
+  userProtocol: ユーザー契約
+  privacyPolicy: プライバシーポリシー
+  protocol: <0>{{userProtocol}}</0> と <1>{{privacyPolicy}}</1> を読み、同意します。
+
+  

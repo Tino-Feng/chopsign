@@ -1,0 +1,33 @@
+login:
+  title: 登录
+  form:
+    email:
+      label: 邮箱
+      placeholder: ls@chopsign.com
+      rules:
+        required: 邮箱不能为空
+        format: 请输入正确的邮箱格式
+    password:
+      label: 密码
+      forgot: 忘记密码
+      placeholder: Cs@2025
+      rules:
+        required: 密码不能为空
+        format: 密码至少包含一个英文字母，密码长度为8-16位
+    submit: 登录
+  noAccount: 还没有账号？<0>{{link}}</0>
+  toRegister: 前往创建
+  tab:
+    account: 账号登录
+    qrcode: 二维码登录
+  modal:
+    tooltip: 提示
+    content: 继续登录则表示您同意 <0>{{userProtocol}}</0> 和 <1>{{privacyPolicy}}</1>
+    positiveText: 同意
+    negativeText: 不同意
+  userProtocol: 用户协议
+  privacyPolicy: 隐私政策
+  protocol: 我已阅读并同意<0>《{{userProtocol}}》</0>和<1>《{{privacyPolicy}}》</1>
+
+
+

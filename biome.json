@@ -1,0 +1,65 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "none"
+    },
+    "parser": {
+      "jsxEverywhere": false
+    }
+  },
+  "css": {
+    "parser": {
+      "cssModules": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+      "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "paths": {
+              "lodash": "\"lodash-es\" should be used instead of lodash",
+              "moment": "\"dayjs\" should be used instead of moment"
+            }
+          }
+        }
+      },
+      "complexity": {
+        "noForEach": "error",
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {
+            "maxAllowedComplexity": 10
+          }
+        }
+      },
+      "nursery": {
+        "noNestedComponentDefinitions": "error"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+#login {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #FAFBFC;
+
+  > div {
+    flex: 1;
+  }
+
+  .login-box {
+    position: relative;
+    background-color: #fff;
+  }
+
+  .login-container {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 476px;
+    transform: translate(-50%, -50%);
+
+    .forgot {
+      font-size: inherit;
+      height: auto;
+      padding: 0;
+      margin-top: 16px;
+    }
+
+    .protocol {
+      margin-bottom: 24px;
+    }
+  }
+}
